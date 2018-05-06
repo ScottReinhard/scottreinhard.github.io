@@ -81,7 +81,7 @@ hr {
 
 .subhead {
     margin-top: 0px;
-    color: green;
+    color: #33aa00;
     font-family: "tablet-gothic-wide",sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -92,28 +92,74 @@ hr {
 
 }
 
+.mobileSubhead {
+    display:none;
+    margin-top: 0px;
+    color: #33aa00;
+    font-family: "tablet-gothic-wide",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: .05em;
+    /*text-transform: capitalize;*/
+
+}
+
+.email {
+    /*display:none;*/
+    margin-top: 0px;
+    color: black;
+    font-family: "tablet-gothic-wide",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75em;
+    text-align: center;
+    letter-spacing: .05em;
+    position: absolute;
+        bottom: 0;
+        width: 100%;
+        /*height: 20px;*/
+        margin-bottom: 20px;
+    /*text-transform: capitalize;*/
+
+}
+
 @media all and (max-width: 800px) {
     .titling {font-size:2em;
-    visibility: hidden;}
+    display: none;}
     .mobileTitling {font-size:3em;
     display:block;}
     .subhead {font-size:1em;
-
+        display: none;
     }
+    .mobileSubhead{
+    display:block;
+    };
 }
 
 @media all and (max-width: 600px) {
     .titling {font-size:2em;}
     .mobileTitling {font-size:3em;
     display:block;}
-    .subhead {font-size:1em;}
+    .subhead {font-size:1em;
+        display: none;
+    }
+    .mobileSubhead{
+    display:block;
+    };
 }
 
 @media all and (max-width: 400px) {
     .titling {font-size:2em;}
     .mobileTitling {font-size:3em;
     display:block;}
-    .subhead {font-size:1em;}
+    .subhead {font-size:1em;
+        display: none;
+    }
+    .mobileSubhead{
+    display:block;
+    };
 }
 
 
@@ -230,7 +276,7 @@ textarea {
     clip-path: none;
     height: auto;
     margin: 0;
-    overflow: visible;
+    overflow: hidden;
     position: static;
     width: auto;
     white-space: inherit;
