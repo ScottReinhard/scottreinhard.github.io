@@ -319,14 +319,32 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+        .titling {font-size:2em;
+    display: none;}
+    .mobileTitling {font-size:3em;
+    display:block;}
+    .subhead {font-size:1em;
+        display: none;
+    }
+    .mobileSubhead{
+    display:block;
+    };
 }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+        .titling {font-size:2em;
+    display: none;}
+    .mobileTitling {font-size:3em;
+    display:block;}
+    .subhead {font-size:1em;
+        display: none;
+    }
+    .mobileSubhead{
+    display:block;
+    };
 }
 
 /* ==========================================================================
